@@ -37,12 +37,12 @@ public class RegistrationController {
         }
 
         if (userService.doesUserExist(user.getUserName())) {
-            result.rejectValue("userName", "user.exist");
+            result.rejectValue("userName", "user.exist", "This username is already taken");
             return "register";
         }
 
         if (userService.doesEmailExist(user.getEmail())) {
-            result.rejectValue("email", "user.email.exist");
+            result.rejectValue("email", "user.email.exist", "This email is already taken");
             return "register";
         }
 
