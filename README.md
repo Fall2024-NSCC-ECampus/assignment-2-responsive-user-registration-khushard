@@ -15,13 +15,13 @@ This project is a responsive user registration system built with Spring Boot, my
 - Using BCrypt for secure password hashing
 - Email/Username must be unique
 - Server-side input validation and sanitization
-- Using thymeleaf form for error handling
+- Using Thymeleaf form for error handling
 
 ### Login Features
 - Secure authetitication system
 - Session management
 - Protected access for dashboard
-- Logout funcionality
+- Logout functionality
 - Use of a DTO (Data Transfer Object) for login security
 
 ### Technologies Used
