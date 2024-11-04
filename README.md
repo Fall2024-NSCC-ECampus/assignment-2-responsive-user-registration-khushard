@@ -18,7 +18,7 @@ This project is a responsive user registration system built with Spring Boot, my
 - Using Thymeleaf form for error handling
 
 ### Login Features
-- Secure authetitication system
+- Secure authentication system
 - Session management
 - Protected access for dashboard
 - Logout functionality
