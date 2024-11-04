@@ -6,7 +6,7 @@ Overview
 This project is a responsive user registration system built with Spring Boot, H2 Database and Bootstrap. It provides a secure and responsive UI that allows users to create accounts.
 
 
-Features:
+*Features:
 
 -User Friendly registration form
 
@@ -21,16 +21,16 @@ Features:
 -Server-side input validation and sanitization 
 
 
-Technologies Used
+*Technologies Used
 
 Backend: Spring Boot
 
 Frontend: HTML, CSS, Bootstrap
 
-Database: H2 Memory Database
+Database: MySQL Database using XAMPP
 
 
-Future Enhancements
+*Future Enhancements
 
 -Add a user login functionality
 
@@ -39,3 +39,14 @@ Future Enhancements
 -Add a password strength meter
 
 -Implement the use of a real database instead of in memory with H2
+
+--------------------------------------------------------------------
+
+Adding Login Functionality
+
+For the second part of the assignment, we were tasked with implementing Login Functionality.
+
+*New Features
+
+-Implemented 
+  
