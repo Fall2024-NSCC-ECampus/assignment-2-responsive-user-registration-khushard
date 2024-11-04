@@ -2,51 +2,44 @@
 
 # User Registration System
 
-Overview
-This project is a responsive user registration system built with Spring Boot, H2 Database and Bootstrap. It provides a secure and responsive UI that allows users to create accounts.
+## Overview
+
+This project is a responsive user registration system built with Spring Boot, mySQL Database and Bootstrap. It provides a secure and responsive UI that allows users to create accounts and login.
 
 
-*Features:
+## Features:
 
--User Friendly registration form
+### Registration Form Features:
+- User-friendly registration form
+- Design is responsive on all devices using Bootstrap
+- Using BCrypt for secure password hashing
+- Email/Username must be unique
+- Server-side input validation and sanitization
+- Using thymeleaf form for error handling
 
--Responsive design for all devices
+### Login Features
+- Secure authetitication system
+- Session management
+- Protected access for dashboard
+- Logout funcionality
+- Use of a DTO (Data Transfer Object) for login security
 
--Secure password hashing
+### Technologies Used
 
--Email/Username unique validation
-
--H2 memory database for data storage
-
--Server-side input validation and sanitization 
-
-
-*Technologies Used
-
-Backend: Spring Boot
-
-Frontend: HTML, CSS, Bootstrap
-
-Database: MySQL Database using XAMPP
+- Backend: Spring Boot
+- Frontend: HTML, CSS, Bootstrap
+- Database: MySQL Database using XAMPP
+- Security: BCrypt for password hashing
+- Validation: Spring Validation
+- Templating: Thymeleaf
 
 
-*Future Enhancements
 
--Add a user login functionality
+## Future Enhancements
+- Implement a password strength meter
+- Add password reset functionality
+- Add profile management for users
+  
 
--Add email verification
 
--Add a password strength meter
-
--Implement the use of a real database instead of in memory with H2
-
---------------------------------------------------------------------
-
-Adding Login Functionality
-
-For the second part of the assignment, we were tasked with implementing Login Functionality.
-
-*New Features
-
--Implemented 
   
