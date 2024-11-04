@@ -6,6 +6,11 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 
+
+/**
+* An Entity class that represents a user in the system.
+* User info placed to 'userTable' in the database.
+* */
 @Entity
 @Table(name="userTable")
 public class User {
@@ -14,14 +19,21 @@ public class User {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
 
+
+    // Username must be unique, and can't be blank.
     @Column(name = "userName", unique = true, nullable = false)
     @NotBlank (message = "Username is required")
     private String userName;
 
+    /**
+    * Password is hashed using BCrypt.
+    * JsonIgnore prevents the password from being included in any JSON responses.
+    * */
     @JsonIgnore
     @NotBlank (message = "Password is required")
     private String password;
 
+    // Email must be unique and valid email format.
     @Column(name = "email", unique = true, nullable = false)
     @NotBlank(message = "Email is required")
     @Email(message = "Enter a valid Email")
